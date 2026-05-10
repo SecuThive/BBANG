@@ -31,7 +31,15 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={navClass}>
+      <nav
+        className={navClass}
+        style={{
+          background: scrolled ? 'rgba(251, 249, 245, 0.92)' : 'var(--ink)',
+          color: scrolled ? 'var(--ink)' : 'var(--cream)',
+          backdropFilter: scrolled ? 'saturate(140%) blur(12px)' : 'none',
+          WebkitBackdropFilter: scrolled ? 'saturate(140%) blur(12px)' : 'none',
+        }}
+      >
         <Link href="/" className="nav__logo" aria-label="빵뜨락 홈으로">
           <span className="mark"></span>
           빵뜨락
