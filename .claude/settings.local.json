@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.anthropic.com)",
+      "Bash(cp webfetch-1778420735948-krj4aw.bin design.gz)",
+      "Bash(gunzip -f design.gz)",
+      "Bash(tar -tf design)",
+      "Bash(tar -xf design -C .)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind=false --eslint=false --app --src-dir=false --import-alias=\"@/*\" --yes)"
+    ]
+  }
+}
